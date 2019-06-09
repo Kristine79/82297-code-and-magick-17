@@ -45,6 +45,10 @@ window.renderStatistics = function (ctx, names, times) {
     ctx.fillStyle = '#000000';
     ctx.fillText(names[i], x, y + FONT_GAP);
 
+    var ytimes = CLOUD_Y + GAP;
+    ctx.fillText(Math.round(times[i]), x, ytimes + FONT_GAP);
+
+
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'red';
     } else {
